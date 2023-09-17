@@ -1,0 +1,11 @@
+TypeScript is a Super set of javascript.
+TypeScript is all about type safety.
+What TypeScript does:
+Static Checking means when were we write the code the state of the code is 
+directly checked by javascript.(Analyze the code as we type it).
+TypeScript is transpiled to javascript.
+(TypeScript is a developement tool Your project still runs JS).
+TypeScript Types:
+Number,String,Boolean,Null,undefined,Void,Object,Array,Tuples....
+Any,Never,unknown
+we can't assign integer or float separately to a variable we can use a common datatype such as number.
