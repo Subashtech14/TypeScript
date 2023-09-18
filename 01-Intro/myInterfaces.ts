@@ -7,7 +7,11 @@ interface User {
   startTrail(): string;
   getCoupon(couponnam: string, value: number): number;
 }
-const subash: User = {
+interface User {
+  githubToken?: string;
+}
+const subash: Admin = {
+  role: "admin",
   dbId: 123,
   email: "subash",
   userId: 123,
@@ -16,7 +20,10 @@ const subash: User = {
   },
   getCoupon(couponnam: "subash", off: 3) {
     console.log(couponnam);
-
     return 10;
   },
+  githubToken: "subash",
 };
+interface Admin extends User {
+  role: "admin" | "ta" | "learner";
+}
