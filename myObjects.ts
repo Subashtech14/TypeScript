@@ -32,4 +32,15 @@ let my_User:User={
 }
 my_User.email="subash@.dev";
 
+type cardNumber={
+    cardnumber:string
+}
+type cardDate={
+    carddate:string
+}
+//use the existing type to create a new type
+type cardDetails= cardNumber & cardDate & {
+    cvv:number
+};
+
 // createUsers({_id:"1",name:"Subash",email:"subash@lco.dev",isActive:true});
